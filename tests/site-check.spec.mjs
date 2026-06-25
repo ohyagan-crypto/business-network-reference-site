@@ -46,20 +46,21 @@ test("visual assets are present and reachable", async ({ page }) => {
   await page.goto(baseUrl);
   const assetChecks = await page.evaluate(async () => {
     const paths = [
-      "assets/slide-1.svg",
-      "assets/slide-2.svg",
-      "assets/getting-started.svg",
-      "assets/banner-1.svg",
-      "assets/banner-2.svg",
-      "assets/banner-3.svg",
-      "assets/banner-4.svg",
-      "assets/newsletter.svg",
+      "assets/hero-networking.jpg",
+      "assets/hero-presentation.jpg",
+      "assets/visit-business.jpg",
+      "assets/banner-chapter.jpg",
+      "assets/banner-podcast.jpg",
+      "assets/banner-foundation.jpg",
+      "assets/banner-learning.jpg",
+      "assets/newsletter-office.jpg",
     ];
 
     const results = await Promise.all(
       paths.map(async (path) => {
         const response = await fetch(new URL(path, window.location.href));
-        return response.ok;
+        const blob = await response.blob();
+        return response.ok && blob.size > 20000;
       }),
     );
 
@@ -67,7 +68,7 @@ test("visual assets are present and reachable", async ({ page }) => {
   });
 
   expect(assetChecks).toBe(true);
-  await expect(page.locator(".slide-one")).toHaveCSS("background-image", /slide-1\.svg/);
-  await expect(page.locator(".banner-connect")).toHaveCSS("background-image", /banner-1\.svg/);
+  await expect(page.locator(".slide-one")).toHaveCSS("background-image", /hero-networking\.jpg/);
+  await expect(page.locator(".banner-connect")).toHaveCSS("background-image", /banner-chapter\.jpg/);
   await expect(page.locator(".newsletter-left img")).toBeVisible();
 });
