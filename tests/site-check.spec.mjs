@@ -41,3 +41,33 @@ test("layout has no horizontal overflow", async ({ page }) => {
     expect(hasOverflow).toBe(false);
   }
 });
+
+test("visual assets are present and reachable", async ({ page }) => {
+  await page.goto(baseUrl);
+  const assetChecks = await page.evaluate(async () => {
+    const paths = [
+      "assets/slide-1.svg",
+      "assets/slide-2.svg",
+      "assets/getting-started.svg",
+      "assets/banner-1.svg",
+      "assets/banner-2.svg",
+      "assets/banner-3.svg",
+      "assets/banner-4.svg",
+      "assets/newsletter.svg",
+    ];
+
+    const results = await Promise.all(
+      paths.map(async (path) => {
+        const response = await fetch(new URL(path, window.location.href));
+        return response.ok;
+      }),
+    );
+
+    return results.every(Boolean);
+  });
+
+  expect(assetChecks).toBe(true);
+  await expect(page.locator(".slide-one")).toHaveCSS("background-image", /slide-1\.svg/);
+  await expect(page.locator(".banner-connect")).toHaveCSS("background-image", /banner-1\.svg/);
+  await expect(page.locator(".newsletter-left img")).toBeVisible();
+});

@@ -1,36 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650" role="img" aria-label="商務交流會議">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650" role="img" aria-label="Business networking conference">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#394250"/>
-      <stop offset="1" stop-color="#747f90"/>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2f6"/>
+      <stop offset=".42" stop-color="#b8c2ce"/>
+      <stop offset="1" stop-color="#5a6472"/>
     </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a5361"/>
+      <stop offset="1" stop-color="#202630"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#293241"/>
+      <stop offset="1" stop-color="#111824"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
   </defs>
-  <rect width="1600" height="650" fill="url(#bg)"/>
-  <rect y="470" width="1600" height="180" fill="#252b35" opacity=".42"/>
-  <g opacity=".16" fill="#fff">
-    <circle cx="250" cy="150" r="96"/>
-    <circle cx="460" cy="140" r="72"/>
-    <circle cx="1310" cy="175" r="112"/>
-    <circle cx="1120" cy="130" r="64"/>
+  <rect width="1600" height="650" fill="url(#wall)"/>
+  <rect y="370" width="1600" height="280" fill="url(#floor)"/>
+  <g opacity=".18" filter="url(#soft)">
+    <circle cx="182" cy="116" r="88" fill="#ffffff"/>
+    <circle cx="560" cy="86" r="64" fill="#ffffff"/>
+    <circle cx="1270" cy="108" r="96" fill="#ffffff"/>
   </g>
-  <g transform="translate(170 220)">
-    <rect x="0" y="140" width="1260" height="96" rx="18" fill="#ffffff" opacity=".22"/>
-    <g fill="#ffffff" opacity=".9">
-      <circle cx="125" cy="70" r="54"/>
-      <rect x="65" y="130" width="120" height="145" rx="58"/>
-      <circle cx="360" cy="58" r="50"/>
-      <rect x="304" y="122" width="112" height="152" rx="54"/>
-      <circle cx="595" cy="72" r="55"/>
-      <rect x="533" y="134" width="124" height="142" rx="60"/>
-      <circle cx="830" cy="58" r="50"/>
-      <rect x="774" y="122" width="112" height="152" rx="54"/>
-      <circle cx="1065" cy="70" r="54"/>
-      <rect x="1005" y="130" width="120" height="145" rx="58"/>
+  <g transform="translate(835 78)">
+    <rect x="0" y="0" width="492" height="252" rx="8" fill="#ffffff" opacity=".94"/>
+    <rect x="38" y="45" width="260" height="17" fill="#d7192a"/>
+    <rect x="38" y="83" width="380" height="13" fill="#b8c1cc"/>
+    <rect x="38" y="115" width="326" height="13" fill="#b8c1cc"/>
+    <rect x="38" y="158" width="96" height="52" rx="6" fill="#d7192a"/>
+    <rect x="158" y="158" width="96" height="52" rx="6" fill="#2a303b"/>
+    <rect x="278" y="158" width="96" height="52" rx="6" fill="#687486"/>
+  </g>
+  <g transform="translate(120 190)">
+    <ellipse cx="260" cy="338" rx="260" ry="38" fill="#0e131b" opacity=".28"/>
+    <ellipse cx="720" cy="342" rx="375" ry="46" fill="#0e131b" opacity=".28"/>
+    <ellipse cx="1140" cy="338" rx="260" ry="38" fill="#0e131b" opacity=".28"/>
+    <g transform="translate(0 80)">
+      <circle cx="96" cy="72" r="54" fill="#d7a984"/>
+      <path d="M36 262c12-94 35-142 60-142s48 48 60 142z" fill="url(#suit)"/>
+      <path d="M63 136l33 44 33-44" fill="#ffffff"/>
+      <rect x="82" y="144" width="27" height="95" fill="#d7192a"/>
     </g>
-    <g stroke="#d7192a" stroke-width="10" opacity=".88">
-      <path d="M180 115 C240 55 285 55 330 103" fill="none"/>
-      <path d="M650 115 C710 55 755 55 800 103" fill="none"/>
-      <path d="M890 115 C950 55 995 55 1040 103" fill="none"/>
+    <g transform="translate(166 20)">
+      <circle cx="96" cy="72" r="58" fill="#c8916e"/>
+      <path d="M25 294c14-112 43-168 71-168s57 56 71 168z" fill="#1d2633"/>
+      <path d="M58 142l38 52 38-52" fill="#ffffff"/>
+      <rect x="80" y="154" width="32" height="114" fill="#cf1e2f"/>
+    </g>
+    <g transform="translate(344 100)">
+      <circle cx="96" cy="72" r="52" fill="#e2b08a"/>
+      <path d="M36 250c12-88 35-134 60-134s48 46 60 134z" fill="#2d3543"/>
+      <path d="M64 132l32 42 32-42" fill="#ffffff"/>
+    </g>
+    <g transform="translate(480 50)">
+      <circle cx="122" cy="92" r="70" fill="#d39a74"/>
+      <path d="M24 330c17-126 55-190 98-190s81 64 98 190z" fill="#202938"/>
+      <path d="M80 160l42 62 42-62" fill="#ffffff"/>
+      <rect x="105" y="174" width="34" height="120" fill="#d7192a"/>
+    </g>
+    <g transform="translate(710 108)">
+      <circle cx="96" cy="72" r="52" fill="#c88d6b"/>
+      <path d="M36 250c12-88 35-134 60-134s48 46 60 134z" fill="#1c2330"/>
+      <path d="M64 132l32 42 32-42" fill="#ffffff"/>
+    </g>
+    <g transform="translate(838 26)">
+      <circle cx="98" cy="74" r="60" fill="#dba983"/>
+      <path d="M22 302c15-116 45-174 76-174s61 58 76 174z" fill="#28313f"/>
+      <path d="M58 144l40 50 40-50" fill="#ffffff"/>
+      <rect x="84" y="157" width="28" height="110" fill="#d7192a"/>
+    </g>
+    <g transform="translate(1028 88)">
+      <circle cx="96" cy="72" r="54" fill="#d4a07b"/>
+      <path d="M36 258c12-92 35-138 60-138s48 46 60 138z" fill="#202837"/>
+      <path d="M63 136l33 44 33-44" fill="#ffffff"/>
+    </g>
+    <g transform="translate(1192 56)">
+      <circle cx="96" cy="72" r="56" fill="#c58e70"/>
+      <path d="M30 278c13-102 39-154 66-154s53 52 66 154z" fill="#313a48"/>
+      <path d="M62 140l34 46 34-46" fill="#ffffff"/>
+      <rect x="83" y="152" width="26" height="102" fill="#d7192a"/>
     </g>
   </g>
+  <path d="M0 498c214-48 449-41 705 18 335 78 650 68 895-20v154H0z" fill="#121820" opacity=".34"/>
 </svg>

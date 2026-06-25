@@ -1,8 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260">
-  <rect width="640" height="260" fill="#4d5664"/>
-  <circle cx="146" cy="98" r="54" fill="#fff" opacity=".8"/>
-  <circle cx="306" cy="88" r="48" fill="#fff" opacity=".7"/>
-  <circle cx="468" cy="100" r="54" fill="#fff" opacity=".8"/>
-  <path d="M200 115 C240 70 270 70 310 112 M360 115 C400 70 430 70 470 112" fill="none" stroke="#d7192a" stroke-width="10"/>
-  <rect y="170" width="640" height="90" fill="#111827" opacity=".36"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-label="Find a chapter business group">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2f5"/>
+      <stop offset=".5" stop-color="#8f9aaa"/>
+      <stop offset="1" stop-color="#2f3948"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="260" fill="url(#bg)"/>
+  <rect y="160" width="640" height="100" fill="#1b222d" opacity=".28"/>
+  <path d="M458 42c-54 0-98 43-98 96 0 74 98 120 98 120s98-46 98-120c0-53-44-96-98-96z" fill="#d7192a" opacity=".88"/>
+  <circle cx="458" cy="136" r="36" fill="#ffffff"/>
+  <g transform="translate(46 58)">
+    <circle cx="70" cy="56" r="36" fill="#d8a17b"/>
+    <path d="M18 180c9-70 29-108 52-108s43 38 52 108z" fill="#202938"/>
+    <circle cx="194" cy="50" r="34" fill="#c68e6e"/>
+    <path d="M146 180c8-68 27-104 48-104s40 36 48 104z" fill="#303a49"/>
+    <circle cx="314" cy="62" r="38" fill="#dba983"/>
+    <path d="M258 180c10-72 31-110 56-110s46 38 56 110z" fill="#1f2734"/>
+    <path d="M105 80c22-22 41-23 60-2M228 86c24-25 45-25 66-2" fill="none" stroke="#d7192a" stroke-width="9" stroke-linecap="round"/>
+  </g>
 </svg>

@@ -1,6 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260">
-  <rect width="640" height="260" fill="#626c79"/>
-  <path d="M316 64 C360 20 438 54 438 122 C438 188 368 214 320 230 C272 214 202 188 202 122 C202 54 280 20 316 64Z" fill="#fff" opacity=".86"/>
-  <path d="M316 84 C346 50 404 76 404 124 C404 170 354 190 320 204 C286 190 236 170 236 124 C236 76 294 50 316 84Z" fill="#d7192a" opacity=".92"/>
-  <rect y="170" width="640" height="90" fill="#111827" opacity=".36"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-label="Foundation and community hands">
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3f5f8"/>
+      <stop offset=".5" stop-color="#aab4c2"/>
+      <stop offset="1" stop-color="#4a5361"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="260" fill="url(#warm)"/>
+  <circle cx="516" cy="68" r="42" fill="#d7192a" opacity=".92"/>
+  <path d="M120 120c70-58 132-58 188 0" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity=".72"/>
+  <path d="M92 162c45-24 90-20 135 12l26 18c42 28 79 31 126 8l84-42" fill="none" stroke="#d7a07b" stroke-width="34" stroke-linecap="round"/>
+  <path d="M158 196c58 21 107 19 166-12" fill="none" stroke="#c68f70" stroke-width="32" stroke-linecap="round"/>
+  <g fill="#252b35" opacity=".88">
+    <circle cx="146" cy="68" r="34"/>
+    <circle cx="246" cy="60" r="30"/>
+    <circle cx="346" cy="72" r="34"/>
+  </g>
+  <g fill="#ffffff" opacity=".9">
+    <path d="M104 148c7-58 23-88 42-88s35 30 42 88z"/>
+    <path d="M206 145c6-52 21-80 40-80s34 28 40 80z"/>
+    <path d="M304 150c7-58 23-88 42-88s35 30 42 88z"/>
+  </g>
 </svg>

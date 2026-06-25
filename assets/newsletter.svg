@@ -1,8 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
-  <rect x="28" y="24" width="184" height="132" rx="14" fill="#f0f2f5"/>
-  <path d="M38 42 L120 104 L202 42" fill="none" stroke="#d7192a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="64" y="72" width="112" height="12" fill="#9aa4b3"/>
-  <rect x="64" y="102" width="86" height="12" fill="#9aa4b3"/>
-  <circle cx="194" cy="136" r="30" fill="#d7192a"/>
-  <path d="M182 136 H206 M196 124 L208 136 L196 148" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260" role="img" aria-label="Newsletter papers and envelope">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7ebf0"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="260" fill="#f3f4f6"/>
+  <g transform="rotate(-8 126 117)">
+    <rect x="54" y="18" width="150" height="190" rx="8" fill="url(#paper)" stroke="#c9d1dc"/>
+    <rect x="78" y="46" width="82" height="10" fill="#d7192a"/>
+    <rect x="78" y="74" width="100" height="8" fill="#a3adbb"/>
+    <rect x="78" y="96" width="82" height="8" fill="#a3adbb"/>
+    <rect x="78" y="124" width="104" height="54" fill="#dfe4ea"/>
+  </g>
+  <g transform="translate(82 88)">
+    <rect x="0" y="0" width="176" height="118" rx="10" fill="#ffffff" stroke="#b8c1cd"/>
+    <path d="M8 14l80 62 80-62" fill="none" stroke="#d7192a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 106l58-52M166 106l-58-52" fill="none" stroke="#aeb7c4" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <circle cx="64" cy="210" r="18" fill="#d7192a" opacity=".9"/>
+  <circle cx="242" cy="42" r="22" fill="#252b35" opacity=".2"/>
 </svg>
