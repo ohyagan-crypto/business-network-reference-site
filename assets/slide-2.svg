@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650" role="img" aria-label="商務簡報與交流">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#56606e"/>
+      <stop offset=".58" stop-color="#2f3744"/>
+      <stop offset="1" stop-color="#202631"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="650" fill="url(#bg)"/>
+  <g transform="translate(160 105)">
+    <rect x="630" y="0" width="520" height="328" rx="18" fill="#f8fafc" opacity=".93"/>
+    <rect x="672" y="52" width="300" height="20" fill="#d7192a"/>
+    <rect x="672" y="100" width="408" height="18" fill="#9aa4b3"/>
+    <rect x="672" y="140" width="352" height="18" fill="#9aa4b3"/>
+    <rect x="672" y="202" width="120" height="66" rx="10" fill="#d7192a"/>
+    <rect x="828" y="202" width="120" height="66" rx="10" fill="#252b35"/>
+    <rect x="984" y="202" width="120" height="66" rx="10" fill="#687486"/>
+    <rect x="0" y="360" width="1280" height="112" rx="22" fill="#ffffff" opacity=".18"/>
+    <g fill="#fff" opacity=".9">
+      <circle cx="120" cy="270" r="52"/>
+      <rect x="62" y="330" width="116" height="132" rx="56"/>
+      <circle cx="340" cy="260" r="48"/>
+      <rect x="286" y="316" width="108" height="145" rx="52"/>
+      <circle cx="560" cy="272" r="52"/>
+      <rect x="502" y="332" width="116" height="130" rx="56"/>
+      <circle cx="1180" cy="270" r="52"/>
+      <rect x="1122" y="330" width="116" height="132" rx="56"/>
+    </g>
+  </g>
+</svg>

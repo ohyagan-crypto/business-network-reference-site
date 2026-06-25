@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="商務連結平台示範網站，復刻參考站的版面節奏：雙層導覽、主視覺輪播、參訪浮層、介紹文字、連結橫幅、電子報與多欄頁尾。"
+    />
+    <title>商務連結平台：改變做生意的方式</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="top-row">
+          <div class="holder top-holder">
+            <div class="top-left"></div>
+            <div class="top-right">
+              <a href="#international">Business Network International</a>
+              <div class="dropdown">
+                <button type="button" data-dropdown-toggle>
+                  Account Login
+                  <span aria-hidden="true">⌄</span>
+                </button>
+                <ul class="dropdown-menu" data-dropdown-menu>
+                  <li><a href="#connect">Member Connect</a></li>
+                  <li><a href="#builder">Business Builder</a></li>
+                  <li><a href="#international">International</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-row">
+          <div class="holder nav-holder">
+            <a class="site-logo" href="#top" aria-label="回首頁">
+              <span class="logo-mark">B</span>
+              <span class="logo-text">
+                <strong>臺灣</strong>
+                <small>Business Network</small>
+              </span>
+            </a>
+            <nav class="desktop-nav" aria-label="主要導覽">
+              <a href="#why">為什麼選擇我們?</a>
+              <a href="#chapter">查找分會</a>
+              <a href="#testimonials">會員見證</a>
+              <a href="#contact">聯絡我們</a>
+            </nav>
+            <button class="mobile-toggle" type="button" aria-label="開啟選單" aria-expanded="false" data-mobile-toggle>
+              ☰
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section class="visit-overlay" data-visit-overlay aria-hidden="true">
+        <div class="visit-card" role="dialog" aria-modal="true" aria-labelledby="visit-title">
+          <button class="modal-close" type="button" aria-label="關閉" data-close-overlay>×</button>
+          <div class="chapter-left">
+            <img src="assets/getting-started.svg" alt="商務人士交流示意" />
+          </div>
+          <div class="chapter-right">
+            <div class="chapter-inner">
+              <h2 id="visit-title">Getting Started Easy</h2>
+              <ul class="start-icons">
+                <li>
+                  <span>⌕</span>
+                  <p>Find a<br />Chapter</p>
+                </li>
+                <li>
+                  <span>✉</span>
+                  <p>Submit a<br />Request</p>
+                </li>
+                <li>
+                  <span>✓</span>
+                  <p>Complete the<br />Registration</p>
+                </li>
+              </ul>
+              <h3>參訪分會</h3>
+              <form class="chapter-form" id="chapter-form">
+                <input type="text" name="chapter" placeholder="查找分會" />
+                <button type="submit" aria-label="查找">
+                  <span>→</span>
+                </button>
+              </form>
+              <p class="form-note" id="chapter-message" role="status"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main id="top">
+        <section class="widget-slider">
+          <div class="carousel" aria-label="首頁輪播">
+            <article class="slide active" data-slide="0">
+              <div class="slide-image slide-one"></div>
+              <div class="opacity-div">
+                <div class="holder slider-content">
+                  <a class="invited-link" href="#chapter" data-open-overlay>Get Invited</a>
+                </div>
+              </div>
+            </article>
+            <article class="slide" data-slide="1" aria-hidden="true">
+              <div class="slide-image slide-two"></div>
+              <div class="opacity-div">
+                <div class="holder slider-content">
+                  <a class="invited-link" href="#chapter" data-open-overlay>Get Invited</a>
+                </div>
+              </div>
+            </article>
+
+            <button class="slider-control prev" type="button" aria-label="上一張" data-prev>‹</button>
+            <button class="slider-control next" type="button" aria-label="下一張" data-next>›</button>
+            <ol class="carousel-indicators">
+              <li><button class="active" type="button" data-slide-target="0" aria-label="第一張"></button></li>
+              <li><button type="button" data-slide-target="1" aria-label="第二張"></button></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="widget-page-header" id="why">
+          <div class="holder">
+            <h1>商務連結平台 - 世界領先的人脈交際和商務引薦平台</h1>
+          </div>
+        </section>
+
+        <section class="widget-text-columns">
+          <div class="holder wysiwyg">
+            <p>
+              商務連結平台是一個經過驗證的商業網絡組織。會員都是專業的商務人士，透過互相支持與引薦，協助彼此建立長期且有意義的商務關係。
+            </p>
+            <p>
+              在固定聚會與線上資源中，會員能與值得信賴的企業領袖會面，交換經驗、接受商務培訓，並創造合格的商務引薦機會。
+            </p>
+            <p>商務連結平台。改變全世界做生意的方式。</p>
+          </div>
+        </section>
+
+        <section class="widget-banners" id="chapter">
+          <div class="holder banner-layout">
+            <div class="nav-two">
+              <h2>Links</h2>
+              <ul>
+                <li><a href="#members">查詢會員<span>›</span></a></li>
+                <li><a href="#regions">區域網站<span>›</span></a></li>
+                <li><a href="#events">活動行事曆<span>›</span></a></li>
+              </ul>
+            </div>
+
+            <div class="banner-grid">
+              <a class="banner-box banner-connect" href="#chapter">
+                <span>Business Network</span>
+              </a>
+              <a class="banner-box banner-podcast" href="#podcast">
+                <span>Podcast</span>
+              </a>
+              <a class="banner-box banner-foundation" href="#foundation">
+                <span>Foundation</span>
+              </a>
+              <a class="banner-box banner-university" href="#university">
+                <span>Business U</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="widget-newsletter" id="newsletter">
+          <div class="holder newsletter-outer">
+            <div class="newsletter-left">
+              <img src="assets/newsletter.svg" alt="Newsletter" />
+            </div>
+            <div class="newsletter-right">
+              <h2>Newsletter</h2>
+              <p>訂閱我們的時事通訊，第一時間獲取有關社交商會、公共講座及商業機會的獨家資訊。</p>
+              <form class="newsletter-form" id="newsletter-form">
+                <input type="email" name="email" placeholder="郵件地址" required />
+                <button type="submit" aria-label="訂閱">
+                  <span>→</span>
+                </button>
+              </form>
+              <p class="newsletter-status" id="newsletter-status" role="status"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mini-proof" id="testimonials">
+          <div class="holder proof-grid">
+            <article>
+              <h2>會員見證</h2>
+              <p>穩定的聚會、清楚的引薦流程與可信任的會員關係，是商務成長的基礎。</p>
+            </article>
+            <article>
+              <strong>建立關係</strong>
+              <span>讓專業人士持續交流，累積長期信任。</span>
+            </article>
+            <article>
+              <strong>產生引薦</strong>
+              <span>透過結構化流程，提高商務合作機會。</span>
+            </article>
+            <article>
+              <strong>共同學習</strong>
+              <span>提供商務培訓與同儕學習資源。</span>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact">
+        <div class="nav-row">
+          <div class="holder footer-cols">
+            <ul>
+              <li><a href="#top">主頁</a></li>
+              <li><a href="#why">為什麼選擇我們?</a></li>
+              <li><a href="#chapter">查找分會</a></li>
+              <li><a href="#testimonials">會員見證</a></li>
+            </ul>
+            <ul>
+              <li><a href="#contact">聯絡我們</a></li>
+              <li><a href="#members">查詢會員</a></li>
+              <li><a href="#regions">區域網站</a></li>
+              <li><a href="#events">活動行事曆</a></li>
+            </ul>
+            <div class="social-col">
+              <strong>Business Network</strong>
+              <span>臺灣</span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-row">
+          <div class="holder">
+            <p><strong>© 2026 Business Network Demo.</strong> All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <nav class="mobile-menu" data-mobile-menu aria-label="手機導覽">
+        <a href="#why">為什麼選擇我們?<span>›</span></a>
+        <a href="#chapter">查找分會<span>›</span></a>
+        <a href="#testimonials">會員見證<span>›</span></a>
+        <a href="#contact">聯絡我們<span>›</span></a>
+      </nav>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
